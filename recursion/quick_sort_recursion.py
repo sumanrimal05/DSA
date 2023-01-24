@@ -4,6 +4,7 @@ def quick_sort(list):
         return list
     # Recursion
     else:
+        # Here you can choose a random pivot for getting average time complexity of O(nlogn)
         pivot = list[0]
         left_sub_array = [i for i in list[1:] if i < pivot]
         right_sub_array = [i for i in list[1:] if i > pivot]
